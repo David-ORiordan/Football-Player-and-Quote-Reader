@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      G00258621
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goToSettingsPage()">
+        <ion-icon name="md-settings"></ion-icon>
+      </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Quote from {{ author }} about: </h2>
+  <ion-list>
+    <ion-item>
+      <ul>
+        <li>{{ tags }}</li>
+      </ul>
+    </ion-item>
+  </ion-list>
+  <h3>{{ content }}</h3>
+  <br/>
+ <!-- <h2 >{{ text }}</h2> MAYBE DELETE, NOT SURE WHAT IT'S THERE FOR!! --> <!--howCountryID()-->
+
+<!-- new stuff - delete later -->
+ <!-- <ion-item> 
+    <ion-label color="primary">Enter Country ID</ion-label>
+    <ion-input [(ngModel)]="CID"  placeholder="Input ID"></ion-input>
+  </ion-item>
+  <button ion-button (click)="CIDButton()">Save</button>
+  <p>Country ID is {{ CID }}</p> -->
+</ion-content>
